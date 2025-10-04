@@ -9,6 +9,8 @@
 </head>
 <body>
 <div class="background">
+
+  <!-- Header with logos -->
   <header>
     <div class="logo-container">
       <img src="dobby-logo.png" alt="Dobby Logo" class="logo">
@@ -17,8 +19,10 @@
     </div>
   </header>
 
+  <!-- Main Game Card -->
   <main>
     <div class="game-card">
+      <!-- Level Select -->
       <div class="level-select">
         <label>Select Level: </label>
         <select id="levelSelect">
@@ -28,21 +32,26 @@
         </select>
       </div>
 
+      <!-- Instructions -->
       <p class="instructions">Guess the secret code! Digits 0-9. Max 10 attempts.</p>
 
+      <!-- Input and Button -->
       <div class="input-area">
         <input type="text" id="guessInput" maxlength="4" placeholder="Enter code">
         <button id="submitBtn">Submit</button>
       </div>
 
+      <!-- Hint & Attempts -->
       <p id="hint" class="hint-text"></p>
       <div id="attemptsContainer"></div>
     </div>
   </main>
 
+  <!-- Footer with X logo -->
   <footer>
     <p>Made by <img src="x-logo.png" alt="X Logo" class="x-logo">@prith_boy</p>
   </footer>
+
 </div>
 
 <script src="script.js"></script>
