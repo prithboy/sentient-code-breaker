@@ -1,0 +1,32 @@
+/* Base styles same as before, add these new styles for color hints */
+.attempt {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.correct { background-color: #4caf50; } /* green */
+.correct-position { background-color: #ffeb3b; color: #000; } /* yellow */
+.wrong { background-color: #f44336; } /* red */
+
+.level-select {
+    margin-bottom: 10px;
+}
+
+#hint {
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+/* Win/Lose animation */
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

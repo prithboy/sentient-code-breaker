@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sentient Code Breaker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo-container">
+        <img src="dobby-logo.png" alt="Dobby Logo" class="logo">
+        <h1>Sentient Code Breaker</h1>
+        <img src="sentient-logo.png" alt="Sentient Logo" class="logo">
+    </div>
+</header>
+
+<main>
+    <div class="game-container">
+        <div class="level-select">
+            <label>Select Level: </label>
+            <select id="levelSelect">
+                <option value="4">Easy (4-digit)</option>
+                <option value="5">Medium (5-digit)</option>
+                <option value="6">Hard (6-digit)</option>
+            </select>
+        </div>
+        <p class="instructions">Guess the code! Digits 0-9. You have 10 attempts.</p>
+        <input type="text" id="guessInput" maxlength="4" placeholder="Enter your guess">
+        <button id="submitBtn">Submit</button>
+        <p id="hint"></p>
+        <div id="attemptsContainer"></div>
+    </div>
+</main>
+
+<footer>
+    <p>Made by <img src="x-logo.png" alt="X Logo" class="x-logo">@prith_boy</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
